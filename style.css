@@ -475,6 +475,7 @@ p {
 
 
 
+
 .FlexContainer {
   display: flex;
   flex-wrap: wrap;
@@ -482,7 +483,7 @@ p {
   align-items: center;
   align-content: center;
   width: 65%;
-  margin-top: 140px;
+  margin-top: 100px;
   height: 120vh;
   overflow: auto;
   flex-direction: row;
@@ -492,17 +493,34 @@ p {
   width: 160px;
   height: 160px;
   margin: 23px;
+  position: relative;
+}
+
+.FlexContainer div h3{
+  margin-top: -33px;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  filter: drop-shadow(2px 2px 2px green);  
 }
 
 .FlexContainer div img{
   width: 160px;
   height: 160px;
+  z-index: -1;
 }
 
 .FlexContainer div img:hover{
   width: 160px;
   height: 160px;
   opacity: 0.7;
+}
+
+.FlexContainer div p{
+  z-index: 9;
+  font-size: 8px;
+  color: white;
 }
 
 .StoreCard {
